@@ -60,7 +60,7 @@ nav .navbar {
 nav .navbar .logo a {
   font-weight: 500;
   font-size: 35px;
-  color: #4070f4;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -82,14 +82,14 @@ nav .navbar .menu li {
 .navbar .menu a {
   font-size: 18px;
   font-weight: 500;
-  color: #0e2431;
+  color: #b5b5c0;
   padding: 6px 0;
   transition: all 0.4s ease;
   text-decoration: none;
 }
 
 .navbar .menu a:hover {
-  color: #4070f4;
+  color: #ff6d54;
   text-decoration: none;
 }
 
@@ -110,8 +110,20 @@ nav.sticky .menu a:hover {
   margin: 0 6px;
 }
 
+.navbar .media-icons a:hover {
+  color: #ff6d54;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 6px;
+}
+
 nav.sticky .media-icons a {
   color: #fff;
+  text-decoration: none;
+}
+
+nav.sticky .media-icons a:hover {
+  color: #000;
   text-decoration: none;
 }
 
@@ -142,31 +154,40 @@ nav.sticky .menu-btn {
 
 /* home section styling */
 .home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 30px;
+  flex-wrap: wrap;
   height: 100vh;
   width: 100%;
-  background: url("./images/landing_img.jpg") no-repeat;
+  background: url("./images/mathivanan_pachiyappan_uiux_design_bg.png") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+/* Content box */
 .home .home-content {
-  width: 90%;
-  height: 100%;
-  margin: auto;
+  flex: 1 1 400px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 1;
 }
 
 .home .text-one {
   font-size: 25px;
-  color: #0e2431;
+  color: #fff;
 }
 
 .home .text-two {
-  color: #0e2431;
+  color: #fff;
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
@@ -175,13 +196,13 @@ nav.sticky .menu-btn {
 .home .text-three {
   font-size: 40px;
   margin: 5px 0;
-  color: #4070f4;
+  color: #ff6d54;
 }
 
 .home .text-four {
   font-size: 23px;
   margin: 5px 0;
-  color: #0e2431;
+  color: #fff;
 }
 
 .home .button {
@@ -205,6 +226,70 @@ nav.sticky .menu-btn {
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
+}
+
+/* Image box with tilt */
+.home-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  z-index: 1;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .home-image {
+    order: 1;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .home .home-content {
+    width: 100%;
+    order: 2;
+    margin-top: -80px;
+    align-items: center;
+  }
+
+  .home-image img {
+    max-width: 90%;
+  }
+
+  .home .text-two {
+    font-size: 50px;
+  }
+
+  .home .text-three {
+    font-size: 30px;
+  }
+
+  .home .text-one,
+  .home .text-four {
+    font-size: 18px;
+  }
+
+  .home .button button {
+    font-size: 20px;
+  }
 }
 
 /* About Section Styling */
@@ -259,12 +344,12 @@ section .title span::after {
 }
 
 .about .about-details .left {
-  width: 45%;
+  width: 40%;
 }
 
 .about .left img {
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 450px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -433,6 +518,55 @@ a {
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p {
   color: #fff;
+}
+
+.masonry-gallery {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #0e2431;
+}
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item iframe {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item iframe:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Columns */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    column-count: 1;
+  }
 }
 
 /* Contact Me CSS */
@@ -621,7 +755,7 @@ footer .text span a:hover {
 }
 
 .blink {
-  color: orange;
+  color: #ff6d5a;
   animation: blinker 1s linear infinite;
 }
 
@@ -630,5 +764,6 @@ footer .text span a:hover {
     opacity: 0;
   }
 }
+
 
 
