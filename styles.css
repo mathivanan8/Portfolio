@@ -296,53 +296,81 @@ img { max-width: 100%; display: block; border-radius: 8px; }
   }
 }
 
-
+/* --- Gallery --- */
 .masonry-gallery {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1400px; /* prevents too-wide stretch on ultrawide monitors */
+  margin: 0 auto;
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
   font-family: "Ubuntu", sans-serif;
 }
 
 .gallery-title {
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: #0e2431;
+  margin-bottom: 50px;
+  letter-spacing: 0.3px;
 }
 
+/* Responsive Masonry Layout */
 .gallery-grid {
   column-count: 3;
-  column-gap: 20px;
+  column-gap: 28px;
 }
 
 .gallery-item {
   break-inside: avoid;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-item iframe {
   width: 100%;
+  height: 340px;
   display: block;
+  border: none;
+  border-radius: 14px;
   transition: transform 0.3s ease;
 }
 
-.gallery-item iframe:hover {
-  transform: scale(1.05);
+/* Hover effects */
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
 }
 
-/* Responsive Columns */
-@media (max-width: 1024px) {
+.gallery-item iframe:hover {
+  transform: scale(1.04);
+}
+
+/* --- Responsive Columns --- */
+@media (max-width: 1200px) {
   .gallery-grid {
     column-count: 2;
   }
+  .gallery-item iframe {
+    height: 300px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .masonry-gallery {
+    padding: 50px 24px;
+  }
+  .gallery-title {
+    font-size: 1.8rem;
+  }
   .gallery-grid {
     column-count: 1;
+  }
+  .gallery-item iframe {
+    height: 260px;
   }
 }
 
