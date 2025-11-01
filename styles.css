@@ -11,31 +11,6 @@
   --pad: 20px;
 }
 
-/* Custom Scroll Bar CSS */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  width: 70%;
-  margin: auto;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #6e93f7;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #4070f4;
-}
-
 /* 🌙 Dark mode variables */
 @media (prefers-color-scheme: dark) {
   :root {
