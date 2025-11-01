@@ -2,280 +2,286 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mathivanan — UI/UX Designer</title>
-  <meta name="description" content="Mathivanan Pachiyappan — UI/UX Designer & Front-end. Case studies, process, and contact." />
+  <meta name="description" content="Mathivanan | UI/UX Designer & Front-end Developer — Crafting human-centered digital experiences." />
   <link rel="icon" href="./images/mvlogo1.jpg" type="image/x-icon">
-
-  <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav">
-    <div class="container nav-inner">
+    <div class="nav-inner container">
       <div class="brand">
         <img src="./images/mvlogo1.jpg" alt="logo" class="brand-logo">
         <span class="brand-name">Mathivanan<span class="dot">.</span>Design</span>
       </div>
-
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </div>
-
-      <div class="nav-actions">
-        <a class="btn ghost" href="#projects">View Work</a>
-        <a class="btn primary" href="./files/Mathivanan_Resume-UXUI.pdf" download>Download CV</a>
+      <div class="nav-cta">
+        <a class="btn secondary" href="#projects">View Work</a>
+        <a class="btn" href="./files/Mathivanan_Resume-UXUI.pdf" download>Download Resume</a>
       </div>
+      <button class="menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header id="home" class="hero">
-    <div class="container hero-grid reveal">
-      <div class="hero-left">
-        <div class="micro">Hey there 👋</div>
-        <h1 class="hero-title">Mathivanan — Crafting human-centered digital experiences</h1>
-        <p class="hero-lead">I design clear, accessible interfaces and prototypes that solve problems and delight users. From research to pixel, I focus on product outcomes and design clarity.</p>
+  <main>
 
-        <div class="hero-ctas">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn ghost" href="#contact">Say Hello</a>
+    <!-- HERO -->
+    <header id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left reveal">
+          <div class="eyebrow">Hey there 👋 — UI/UX Designer</div>
+          <h1 class="hero-title">Mathivanan — Crafting human-centered digital experiences</h1>
+          <p class="lead">Designs that balance empathy, clarity, and performance. I translate research into usable products and polished interfaces — with accessibility baked in.</p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact</a>
+          </div>
+
+          <div class="hero-meta">
+            <span>Focus:</span>
+            <span>Interaction Design</span> •
+            <span>UX Research</span> •
+            <span>Prototyping</span> •
+            <span>Front-end</span>
+          </div>
         </div>
 
-        <ul class="hero-tags" aria-hidden="true">
-          <li>Interaction Design</li>
-          <li>UX Research</li>
-          <li>Prototyping</li>
-          <li>HTML/CSS</li>
-        </ul>
-      </div>
-
-      <div class="hero-right">
-        <div class="profile-card">
-          <img src="./images/mathivanan_pachiyappan_uiux_profile2.png" alt="Mathivanan profile" class="profile-img">
+        <div class="hero-right reveal">
+          <div class="profile-card">
+            <img src="./images/mathivanan_pachiyappan_uiux_profile2.png" alt="Mathivanan" class="profile-img">
+            <div class="profile-bio">
+              <div class="name">Mathivanan</div>
+              <div class="role">UI/UX Designer • Front-end</div>
+              <div class="contact-mini">
+                <a href="mailto:mathizan16@gmail.com">mathizan16@gmail.com</a>
+                <span>•</span>
+                <a href="tel:+919787264837">+91 9787 264 837</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- ABOUT -->
-  <section id="about" class="about container reveal">
-    <div class="about-grid">
-      <aside class="about-left card">
+    <!-- ABOUT -->
+    <section id="about" class="section container about-grid reveal">
+      <div class="about-left card">
         <h3>About Me</h3>
         <p class="about-text">
-          I’m a UI/UX designer with a software foundation — I blend curiosity, research and front-end skills to ship human-centered products. I enjoy turning messy problems into simple, usable flows.
+          I'm a friendly, process-driven UI/UX designer with a software background from Freshworks Software Academy.
+          I focus on building simple, accessible interfaces that solve real user problems and delight users in the details.
         </p>
 
-        <div class="edu">
-          <h4>Education</h4>
-          <div class="edu-list">
-            <div class="edu-item">
-              <strong>BCA — Distance Education</strong>
-              <span class="muted">Ongoing / Part-time</span>
-            </div>
-            <div class="edu-item">
-              <strong>2-Year Diploma — Full-time</strong>
-              <span class="muted">Passed 2020 — 94% (1st Class)</span>
-            </div>
+        <h4 class="edu-title">Education</h4>
+        <div class="edu-list">
+          <div class="edu-item">
+            <div class="edu-title-strong">BCA — Distance Education</div>
+            <div class="edu-sub muted">Ongoing / Part-time</div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-title-strong">2-Year Diploma — Full-time</div>
+            <div class="edu-sub muted">Passed 2020 — 94% (1st Class)</div>
           </div>
         </div>
 
-        <a class="btn primary block" href="./files/Mathivanan_Resume-UXUI.pdf" download>Download CV</a>
-      </aside>
+        <a class="btn download" href="./files/Mathivanan_Resume-UXUI.pdf" download>Download CV</a>
+      </div>
 
-      <div class="about-right">
-        <div class="card how-i-work">
-          <h4>How I work</h4>
-          <p class="muted">Product-centered: research → prototype → test → iterate. For every project I show the brief, my process, and the outcome.</p>
-          <ul class="bullets">
-            <li>User interviews & research</li>
-            <li>Low-fi → High-fi prototypes</li>
-            <li>Accessibility & inclusive design</li>
-          </ul>
-        </div>
+      <div class="about-right card">
+        <h3>How I Work</h3>
+        <p class="muted">I follow a product-centered design workflow — research → ideate → prototype → test → iterate. Below are the practical habits I bring to projects.</p>
+        <ul class="work-list">
+          <li><strong>User Research:</strong> Interviews & usability testing to validate product decisions.</li>
+          <li><strong>Rapid Prototyping:</strong> Wireframes to interactive prototypes (Figma).</li>
+          <li><strong>Accessible UI:</strong> Contrast, readable typographic scale, keyboard flows.</li>
+        </ul>
 
-        <div class="card highlights">
-          <h4>Highlights</h4>
-          <div class="grid-2">
-            <div class="mini">
-              <strong>94%</strong>
-              <span class="muted">Diploma (2020)</span>
-            </div>
-            <div class="mini">
-              <strong>Freshworks</strong>
-              <span class="muted">Software Academy</span>
-            </div>
-            <div class="mini">
-              <strong>Frontend</strong>
-              <span class="muted">HTML / CSS</span>
-            </div>
-            <div class="mini">
-              <strong>Tools</strong>
-              <span class="muted">Figma · Photoshop</span>
-            </div>
+        <div class="spotlight">
+          <div class="spot-left">
+            <div class="spot-title">Recent Focus</div>
+            <div class="spot-sub muted">Design systems, accessibility, and inclusive onboarding flows.</div>
+          </div>
+          <div class="spot-right">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect rx="8" width="24" height="24" fill="#FDE8F0"/><path d="M7 13l3 3 7-9" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
         </div>
+
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="experience container reveal">
-    <h3 class="section-title">Experience</h3>
+    <!-- EXPERIENCE (LinkedIn-like) -->
+    <section id="experience" class="section container reveal">
+      <div class="section-header">
+        <h3>Work Experience</h3>
+        <p class="muted">Real projects, real outcomes — selected roles and responsibilities.</p>
+      </div>
 
-    <div class="exp-list">
-      <!-- Experience 1 -->
-      <article class="exp-card">
-        <div class="exp-head">
-          <div class="exp-company">
-            <img src="./images/adeptit_logo.png" alt="Adeptit" class="comp-logo">
-            <div>
-              <div class="company-name">Adeptit Designs</div>
-              <div class="position small">Junior UI/UX Designer</div>
-            </div>
+      <div class="experience-list">
+
+        <!-- Adeptit Designs -->
+        <article class="exp-card">
+          <div class="exp-left">
+            <img src="./images/adeptit_logo.png" alt="Adeptit" class="company-logo">
           </div>
-          <div class="exp-duration">2024 — 2025</div>
-        </div>
-
-        <div class="exp-body">
-          <ul>
-            <li>Creative & results-driven logo & web designer. Crafted visually compelling designs for multiple industries.</li>
-            <li>Built responsive WordPress sites using Elementor and WooCommerce; prototyped flows in Figma and polished visuals in Photoshop.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Experience 2 -->
-      <article class="exp-card">
-        <div class="exp-head">
-          <div class="exp-company">
-            <img src="./images/lumel_logo.png" alt="Lumel" class="comp-logo">
-            <div>
-              <div class="company-name">Lumel Technologies Inc</div>
-              <div class="position small">Product Developer Intern</div>
+          <div class="exp-main">
+            <div class="exp-head">
+              <div class="company">Adeptit Designs</div>
+              <div class="period">2024 – 2025</div>
             </div>
+
+            <div class="role">Junior UI/UX Designer</div>
+            <ul class="exp-bullets">
+              <li>Creative logo & web design specialist — crafted visually compelling designs for multiple industries and research-informed approaches.</li>
+              <li>Built responsive WordPress interfaces using Elementor & WooCommerce, and prototyped in Figma for mobile & web flows.</li>
+            </ul>
           </div>
-          <div class="exp-duration">2023 — 2024</div>
-        </div>
+        </article>
 
-        <div class="exp-body">
-          <ul>
-            <li>Developed Power BI custom visuals using React, TypeScript, Node.js and collaborated with QA to improve product accuracy.</li>
-            <li>Worked with Azure DevOps + Jira for sprint planning, task tracking, and CI/CD workflows.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Experience 3 -->
-      <article class="exp-card">
-        <div class="exp-head">
-          <div class="exp-company">
-            <img src="./images/freshworks_logo.png" alt="Freshworks" class="comp-logo">
-            <div>
-              <div class="company-name">Freshworks STS Academy</div>
-              <div class="position small">Software Trainee Student (FSSA)</div>
+        <!-- Lumel Technologies -->
+        <article class="exp-card">
+          <div class="exp-left">
+            <img src="./images/lumel_logo.png" alt="Lumel" class="company-logo">
+          </div>
+          <div class="exp-main">
+            <div class="exp-head">
+              <div class="company">Lumel Technologies Inc</div>
+              <div class="period">2023 – 2024</div>
             </div>
+
+            <div class="role">Product Developer Intern</div>
+            <ul class="exp-bullets">
+              <li>Developed Power BI visuals and front-end features with React.js, TypeScript and Node.js to improve data accuracy and usability.</li>
+              <li>Collaborated with QA and engineering teams using Jira & Azure DevOps for sprint planning and CI/CD workflows.</li>
+            </ul>
           </div>
-          <div class="exp-duration">2022 — 2023</div>
+        </article>
+
+        <!-- Freshworks STS Academy -->
+        <article class="exp-card">
+          <div class="exp-left">
+            <img src="./images/freshworks_logo.png" alt="Freshworks" class="company-logo">
+          </div>
+          <div class="exp-main">
+            <div class="exp-head">
+              <div class="company">Freshworks STS Academy (FSSA)</div>
+              <div class="period">2022 – 2023</div>
+            </div>
+
+            <div class="role">Software Trainee Student (FSSA)</div>
+            <ul class="exp-bullets">
+              <li>Completed a comprehensive training program in software development and UI/UX design with hands-on project work.</li>
+              <li>Skilled in UI/UX tools (Figma, Photoshop, Miro) and front-end technologies (HTML, CSS, JS).</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS (cards + overlay) -->
+    <section id="projects" class="section container reveal">
+      <div class="section-header">
+        <h3>Selected Projects</h3>
+        <p class="muted">3 curated case studies — open to full case study links.</p>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card" href="https://www.behance.net/gallery/218405515/Mobbi-an-iOS-App-Design-UIUX-Case-Study" target="_blank" rel="noopener">
+          <img src="./images/mobbi_card_preview.png" alt="Mobbi Preview">
+          <div class="proj-overlay">Mobbi App — Case study →</div>
+        </a>
+
+        <a class="project-card" href="https://deploy-preview-4--venomblogs.netlify.app/" target="_blank" rel="noopener">
+          <img src="./images/venom_preview.png" alt="Venom Blog">
+          <div class="proj-overlay">VenomBlog — Prototype →</div>
+        </a>
+
+        <a class="project-card" href="https://github.com/fssa-batch3/sec_b_mathivanan.pachiyappan__servlet_jsp_project" target="_blank" rel="noopener">
+          <img src="./images/ballot_preview.png" alt="BallotBox">
+          <div class="proj-overlay">BallotBox — Repo →</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- GALLERY (Behance embeds) -->
+    <section class="section container reveal">
+      <div class="section-header">
+        <h3>Gallery</h3>
+        <p class="muted">Behance previews — click to open full projects.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="iframe-wrap">
+          <iframe loading="lazy" src="https://www.behance.net/embed/project/203992583?ilo0=1" title="Flight Ticket Booking — Behance" allowfullscreen></iframe>
         </div>
-
-        <div class="exp-body">
-          <ul>
-            <li>Completed training in software development & UI/UX. Participated in hands-on projects applying theory to practical scenarios.</li>
-            <li>Skilled in UI/UX design (Figma, Photoshop, Miro) and front-end web technologies (HTML, CSS, JS).</li>
-          </ul>
+        <div class="iframe-wrap">
+          <iframe loading="lazy" src="https://www.behance.net/embed/project/218405515?ilo0=1" title="Mobbi — Behance" allowfullscreen></iframe>
         </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="projects container reveal">
-    <h3 class="section-title">Selected Projects</h3>
-    <div class="projects-grid">
-      <a class="proj-preview" href="https://www.behance.net/gallery/218405515/Mobbi-an-iOS-App-Design-UIUX-Case-Study" target="_blank">
-        <img src="./images/mobbi_card_preview.png" alt="Mobbi">
-        <div class="proj-meta"><strong>Mobbi App</strong><span>Empathy-driven job platform</span></div>
-      </a>
-
-      <a class="proj-preview" href="https://deploy-preview-4--venomblogs.netlify.app/" target="_blank">
-        <img src="./images/venom_preview.png" alt="VenomBlog">
-        <div class="proj-meta"><strong>VenomBlog</strong><span>Intuitive content creation prototype</span></div>
-      </a>
-
-      <a class="proj-preview" href="https://github.com/fssa-batch3/sec_b_mathivanan.pachiyappan__servlet_jsp_project" target="_blank">
-        <img src="./images/ballot_preview.png" alt="BallotBox">
-        <div class="proj-meta"><strong>BallotBox</strong><span>Accessible online voting prototype</span></div>
-      </a>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="gallery container reveal">
-    <h3 class="section-title">Gallery</h3>
-    <p class="muted">Behance previews — click to open full case study.</p>
-
-    <div class="gallery-grid">
-      <div class="iframe-wrap">
-        <iframe loading="lazy" src="https://www.behance.net/embed/project/203992583?ilo0=1" title="Flight Ticket Booking — Behance" allowfullscreen></iframe>
+        <div class="iframe-wrap">
+          <iframe loading="lazy" src="https://www.behance.net/embed/project/233669171?ilo0=1" title="Other Project — Behance" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="iframe-wrap">
-        <iframe loading="lazy" src="https://www.behance.net/embed/project/218405515?ilo0=1" title="Mobbi — Behance" allowfullscreen></iframe>
-      </div>
-      <div class="iframe-wrap">
-        <iframe loading="lazy" src="https://www.behance.net/embed/project/233669171?ilo0=1" title="Other project — Behance" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact container reveal">
-    <h3 class="section-title">Let's talk</h3>
-    <div class="contact-card">
-      <a href="mailto:mathizan16@gmail.com" class="big-link">mathizan16@gmail.com</a>
-      <div class="muted">LinkedIn: <a href="https://www.linkedin.com/in/mathivanan-nsp/" target="_blank">Mathivanan Pachiyappan</a></div>
-      <div class="muted">Mobile: <a href="tel:+919787264837">+91 9787 264 837</a></div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-row">
-        <div>© <span id="year"></span> Mathivanan Design</div>
-        <div class="muted">Crafted with intention</div>
+    <!-- SKILLS -->
+    <section id="skills" class="section container reveal">
+      <h3>Skills & Tools</h3>
+      <p class="muted">Tools and methods I use regularly.</p>
+      <div class="skill-grid">
+        <div class="skill"><img src="./images/figma_mathi_uiux.png" alt="Figma"><span>Figma</span></div>
+        <div class="skill"><img src="./images/photoshop_mathi_uiux.png" alt="Photoshop"><span>Photoshop</span></div>
+        <div class="skill"><img src="./images/illustrator_mathi_uiux.png" alt="Illustrator"><span>Illustrator</span></div>
+        <div class="skill"><img src="./images/miro_mathi_uiux.png" alt="Miro"><span>Miro</span></div>
+        <div class="skill"><img src="./images/hotjar_mathi_uiux.png" alt="Hotjar"><span>Hotjar</span></div>
+        <div class="skill"><img src="./images/maze_mathi_uiux.png" alt="Maze"><span>Maze</span></div>
       </div>
-    </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal">
+      <div class="contact-card card">
+        <h3>Let's Talk</h3>
+        <p class="muted">Open to full-time roles and freelance collaboration.</p>
+        <div class="contact-links">
+          <a href="mailto:mathizan16@gmail.com">mathizan16@gmail.com</a>
+          <a href="https://www.linkedin.com/in/mathivanan-nsp/" target="_blank">LinkedIn — Mathivanan Pachiyappan</a>
+          <a href="tel:+919787264837">+91 9787 264 837</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer container">
+    <div>© <span id="year"></span> Mathivanan Design — Crafted with intent</div>
   </footer>
 
   <script>
+    // small helpers: year, reveal on scroll, mobile menu
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Reveal on scroll
-    const inObserver = new IntersectionObserver((entries) => {
-      entries.forEach(en => { if (en.isIntersecting) en.target.classList.add('show'); });
-    }, { threshold: .12 });
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-    document.querySelectorAll('.reveal').forEach(el => inObserver.observe(el));
+    function toggleMenu(){
+      document.body.classList.toggle('menu-open');
+    }
 
-    // Mobile nav fallback: no heavy menu here.
-    // Sticky nav behavior
-    const nav = document.querySelector('.nav');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 48) nav.classList.add('shadow');
-      else nav.classList.remove('shadow');
-    });
-
-    // Smooth anchors
+    // Smooth internal links
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', (e) => {
         const target = document.querySelector(a.getAttribute('href'));
@@ -283,6 +289,7 @@
           e.preventDefault();
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           history.replaceState(null, '', a.getAttribute('href'));
+          if (document.body.classList.contains('menu-open')) toggleMenu();
         }
       })
     });
