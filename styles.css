@@ -297,17 +297,54 @@ img { max-width: 100%; display: block; border-radius: 8px; }
 }
 
 
-/* GALLERY */
-.gallery { padding: 40px 0; }
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 16px;
-margin-top: 1rem;
+.masonry-gallery {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: "Ubuntu", sans-serif;
 }
-.iframe-wrap{position:relative;border-radius:12px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
-.iframe-wrap::before{content:"";display:block;padding-top:56.25%}
-.iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+.gallery-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #0e2431;
+}
+
+.gallery-grid {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item iframe {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item iframe:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Columns */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
 
 /* CONTACT */
 .contact { padding: 40px 0; text-align: center; }
