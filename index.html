@@ -1,192 +1,177 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mathivanan UI/UX Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mathivanan — UI/UX Designer</title>
+  <meta name="description" content="Mathivanan | UI/UX Designer & Front-end Developer — Crafting human-centered digital experiences." />
   <link rel="icon" href="./images/mvlogo1.jpg" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- Scroll to top -->
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
 
-  <!-- Navbar -->
+  <!-- NAV -->
   <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#">Mathivanan<span class="dot">.</span>Design</a></div>
-      <ul class="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Projects</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <div class="cancel-btn"><i class="fas fa-times"></i></div>
-      </ul>
-      <div class="media-icons">
-        <a href="https://www.linkedin.com/in/mathivanan-nsp/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/mathivanan8" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.behance.net/mathivanan12/" target="_blank"><i class="fab fa-behance"></i></a>
+    <div class="nav-inner container">
+      <div class="brand">
+        <img src="./images/mvlogo1.jpg" alt="logo" />
+        <span>Mathivanan<span class="dot">.</span>Design</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="btn secondary" href="#projects">View Work</a>
+        <a class="btn" href="./files/Mathivanan_Resume-UXUI.pdf" download>Download Resume</a>
       </div>
     </div>
-    <div class="menu-btn"><i class="fas fa-bars"></i></div>
   </nav>
 
-  <!-- Home -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <div class="text">
-        <div class="text-one">Hey there 👋</div>
-        <div class="text-two">I'm <span class="accent">Mathivanan</span></div>
-        <div class="text-three">UI/UX Designer & Front-End Developer</div>
-        <div class="text-four">Crafting seamless digital experiences</div>
-      </div>
-      <div class="button">
-        <a href="mailto:mathizan16@gmail.com">
-          <button>Let's Collaborate</button>
-        </a>
-      </div>
-    </div>
-    <div class="home-image" id="tiltImage">
-      <img src="./images/mathivanan_pachiyappan_uiux_profile2.png" alt="Mathivanan UI/UX Designer">
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="content">
-      <div class="title"><span>About Me</span></div>
-      <div class="about-details">
-        <div class="left">
-          <img src="./images/mathivanan_uiux.png" alt="Mathivanan UI/UX Designer" />
+  <main>
+    <!-- HERO -->
+    <header id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <div class="tagline">Hey there 👋 — UI/UX Designer</div>
+          <h1 class="hero-title">Crafting human-centered digital experiences</h1>
+          <p class="hero-sub">
+            I design accessible, intuitive, and delightful interfaces. I combine product thinking with visual craft to build experiences that people love and teams trust.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Contact</a>
+          </div>
         </div>
-        <div class="right">
-          <h3>Designing experiences that inspire.</h3>
-          <p>I’m a UI/UX designer with a software background from the Freshworks Software Academy. My focus lies in creating intuitive, accessible, and visually engaging products that balance function and beauty.</p>
-          <p>Driven by curiosity and detail, I combine design thinking, prototyping, and user research to craft interfaces that resonate with users.</p>
-          <div class="button">
-            <a href="./images/images/Mathivanan_Resume-UXUI.pdf" download target="blank">
-              <button>Download CV</button>
-            </a>
+
+        <div class="hero-card reveal">
+          <div class="profile-photo">
+            <img src="./images/mathivanan_pachiyappan_uiux_profile2.png" alt="Mathivanan — UI/UX Designer" />
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <div class="content">
-      <div class="title"><span>Skills & Tools</span></div>
-      <p class="intro">A designer is only as strong as the tools and principles they master. Here are mine.</p>
-      <div class="skills-grid">
-        <div class="skill"><img src="./images/figma_mathi_uiux.png"><span>Figma</span></div>
-        <div class="skill"><img src="./images/photoshop_mathi_uiux.png"><span>Photoshop</span></div>
-        <div class="skill"><img src="./images/illustrator_mathi_uiux.png"><span>Illustrator</span></div>
-        <div class="skill"><img src="./images/miro_mathi_uiux.png"><span>Miro</span></div>
-        <div class="skill"><img src="./images/hotjar_mathi_uiux.png"><span>Hotjar</span></div>
-        <div class="skill"><img src="./images/maze_mathi_uiux.png"><span>Maze</span></div>
-      </div>
-    </div>
-  </section>
+    <!-- ABOUT -->
+    <section id="about" class="about container reveal">
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>About Me</h3>
+          <p class="muted">
+            I’m a UI/UX designer with a software background from Freshworks Software Academy. My focus is on creating intuitive, accessible, and visually engaging products that balance function and beauty.
+          </p>
 
-  <!-- Projects -->
-  <section class="services" id="services">
-    <div class="content">
-      <div class="title"><span>Selected Projects</span></div>
-      <div class="projects">
-        <a class="project-card" href="https://www.behance.net/gallery/218405515/Mobbi-an-iOS-App-Design-UIUX-Case-Study" target="_blank">
-          <div class="card-content">
-            <h4>Mobbi App</h4>
-            <p>Remote job platform designed for individuals impacted by layoffs — focused on empathy and accessibility.</p>
+          <h4>Education</h4>
+          <div class="timeline">
+            <div class="timeline-item">
+              <strong>BCA — Distance Education</strong>
+              <div class="muted">Ongoing / Part-time</div>
+            </div>
+            <div class="timeline-item">
+              <strong>2-Year Diploma — Full-time</strong>
+              <div class="muted">Passed 2020 — 94% (1st Class)</div>
+            </div>
           </div>
+
+          <a class="btn download-btn" href="./files/Mathivanan_Resume-UXUI.pdf" download>Download CV</a>
+        </div>
+
+        <div class="about-side">
+          <h4>How I Work</h4>
+          <p class="muted">
+            I follow a product-centered design process: research, ideate, prototype, test, and iterate. Each project showcases the problem, process, decisions, and results.
+          </p>
+          <ul class="muted">
+            <li>User Research & Interviews</li>
+            <li>Low-fi → High-fi Prototypes</li>
+            <li>Accessibility & Inclusive Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills container reveal">
+      <h3 class="center">Skills & Tools</h3>
+      <p class="muted center">
+        A designer is only as strong as their process and tools.
+      </p>
+
+      <div class="skill-grid">
+        <div class="skill"><img src="./images/figma_mathi_uiux.png" alt="Figma"><span>Figma</span></div>
+        <div class="skill"><img src="./images/photoshop_mathi_uiux.png" alt="Photoshop"><span>Photoshop</span></div>
+        <div class="skill"><img src="./images/illustrator_mathi_uiux.png" alt="Illustrator"><span>Illustrator</span></div>
+        <div class="skill"><img src="./images/miro_mathi_uiux.png" alt="Miro"><span>Miro</span></div>
+        <div class="skill"><img src="./images/hotjar_mathi_uiux.png" alt="Hotjar"><span>Hotjar</span></div>
+        <div class="skill"><img src="./images/maze_mathi_uiux.png" alt="Maze"><span>Maze</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container reveal">
+      <h3>Selected Projects</h3>
+      <div class="projects-grid">
+        <a class="proj-card" href="https://www.behance.net/gallery/218405515/Mobbi-an-iOS-App-Design-UIUX-Case-Study" target="_blank">
+          <img src="./images/mobbi_card_preview.png" alt="Mobbi preview">
+          <div class="proj-overlay">Mobbi App →</div>
         </a>
-        <a class="project-card" href="https://deploy-preview-4--venomblogs.netlify.app/" target="_blank">
-          <div class="card-content">
-            <h4>VenomBlog</h4>
-            <p>A blogging platform prototype built for seamless content creation with intuitive interactions.</p>
-          </div>
+        <a class="proj-card" href="https://deploy-preview-4--venomblogs.netlify.app/" target="_blank">
+          <img src="./images/venom_preview.png" alt="VenomBlog preview">
+          <div class="proj-overlay">VenomBlog →</div>
         </a>
-        <a class="project-card" href="https://github.com/fssa-batch3/sec_b_mathivanan.pachiyappan__servlet_jsp_project" target="_blank">
-          <div class="card-content">
-            <h4>BallotBox</h4>
-            <p>Secure, accessible online voting platform built to modernize traditional voting processes.</p>
-          </div>
+        <a class="proj-card" href="https://github.com/fssa-batch3/sec_b_mathivanan.pachiyappan__servlet_jsp_project" target="_blank">
+          <img src="./images/ballot_preview.png" alt="BallotBox preview">
+          <div class="proj-overlay">BallotBox →</div>
         </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Gallery -->
-  <section class="gallery" id="gallery">
-    <div class="content">
-      <div class="title"><span>Gallery</span></div>
-      <div class="gallery-grid">
-        <iframe src="https://www.behance.net/embed/project/203992583?ilo0=1" allowfullscreen></iframe>
-        <iframe src="https://www.behance.net/embed/project/218405515?ilo0=1" allowfullscreen></iframe>
-        <iframe src="https://www.behance.net/embed/project/233669171?ilo0=1" allowfullscreen></iframe>
+    <!-- EDUCATION & EXPERIENCE -->
+    <section id="education" class="container reveal">
+      <h3>Education & Experience</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>UI/UX Designer — Freshworks Software Academy</strong>
+          <div class="muted">Training program — product-focused UI & front-end skills</div>
+        </div>
+        <div class="timeline-item">
+          <strong>Freelance & Personal Projects</strong>
+          <div class="muted">Design, prototyping, and front-end implementation for web & mobile.</div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="content">
-      <div class="title"><span>Let's Talk</span></div>
-      <div class="text">
-        <p><b>Email:</b> <a href="mailto:mathizan16@gmail.com">mathizan16@gmail.com</a></p>
-        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/mathivanan-nsp/">Mathivanan Pachiyappan</a></p>
-        <p><b>Mobile:</b> <a href="tel:+91 9787264837">+91 9787264837</a></p>
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal">
+      <h3>Let’s Talk</h3>
+      <div class="contact-card">
+        <a href="mailto:mathizan16@gmail.com">mathizan16@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mathivanan-nsp/" target="_blank">LinkedIn – Mathivanan Pachiyappan</a>
+        <a href="tel:+919787264837">+91 9787 264 837</a>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <div class="text">
-      <span>© 2025 Mathivanan Design — Crafted with passion</span>
-    </div>
-  </footer>
+  <footer>© <span id="year"></span> Mathivanan Design — Crafted with intent</footer>
 
   <script>
-    // Navbar sticky
-window.onscroll = () => {
-  const nav = document.querySelector("nav");
-  if (window.scrollY > 50) nav.classList.add("sticky");
-  else nav.classList.remove("sticky");
-};
-
-// Tilt effect
-const tiltImage = document.getElementById('tiltImage');
-tiltImage.addEventListener('mousemove', e => {
-  const rect = tiltImage.getBoundingClientRect();
-  const x = e.clientX - rect.left - rect.width / 2;
-  const y = e.clientY - rect.top - rect.height / 2;
-  const rotateX = -(y / 20);
-  const rotateY = x / 20;
-  tiltImage.querySelector('img').style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-});
-tiltImage.addEventListener('mouseleave', () => {
-  tiltImage.querySelector('img').style.transform = `rotateX(0) rotateY(0)`;
-});
-
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const obs = new IntersectionObserver((e)=>e.forEach(x=>x.isIntersecting&&x.target.classList.add('show')), {threshold:.1});
+    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+    const nav=document.querySelector('nav');
+    window.addEventListener('scroll',()=>nav.classList.toggle('shadow',window.scrollY>40));
   </script>
 </body>
-  
 </html>
