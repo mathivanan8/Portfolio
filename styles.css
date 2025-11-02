@@ -30,12 +30,6 @@ img { max-width: 100%; display: block; border-radius: 8px; }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-@media (prefers-color-scheme: dark) {
-  .nav {
-    background: rgba(18,18,20,0.7);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-  }
-}
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 100%; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
 .brand-logo { width: 36px; height: 36px; object-fit: cover; border-radius: 8px; }
