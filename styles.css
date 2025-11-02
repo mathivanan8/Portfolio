@@ -146,7 +146,8 @@ div.media-icons {
 .about-text{color:var(--muted);margin-top:8px}
 .edu-list{display:flex;flex-direction:column;gap:12px;margin-top:12px}
 .edu-item{background:#fbfbff;padding:12px;border-radius:10px}
-.edu-title-strong{font-weight:700; margin-top: 1rem;}
+.edu-title{margin-top: 1rem;}
+.edu-title-strong{font-weight:700}
 .edu-sub{color:var(--muted)}
 .download{background:linear-gradient(180deg,var(--accent),#6f3fe6);color:#fff;padding:9px 25px;border-radius:10px;border:none;font-weight:700;  text-align: center;
 ;cursor:pointer;box-shadow:0 8px 20px rgba(139,92,246,0.09)}
