@@ -11,19 +11,6 @@
   --pad: 20px;
 }
 
-/* 🌙 Dark mode variables */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent: #a78bfa;
-    --accent-2: #fca5a5;
-    --text: #f8fafc;
-    --muted: #9ca3af;
-    --bg: #0e0e11;
-    --card: #18181b;
-    --shadow: 0 6px 14px rgba(0,0,0,0.7);
-  }
-}
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: "Inter", sans-serif;
