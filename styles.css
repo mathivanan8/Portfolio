@@ -271,69 +271,6 @@ div.media-icons {
   color: #222;
 }
 
-/* --- Live Works Section --- */
-#works {
-  overflow: hidden;
-  position: relative;
-  padding: 60px 0;
-  background: #fff;
-}
-
-.section-header {
-  text-align: center;
-  font-size: 1.8rem;
-  color: #0e2431;
-  margin-bottom: 10px;
-}
-
-.muted {
-  text-align: center;
-  color: #777;
-  font-size: 1rem;
-  margin-bottom: 40px;
-}
-
-/* --- Scrolling Grid --- */
-.works-grid {
-  display: flex;
-  gap: 40px;
-  animation: scrollLoop 25s linear infinite;
-  width: max-content;
-}
-
-.works {
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.works img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  filter: grayscale(40%) brightness(0.9);
-  transition: all 0.3s ease;
-}
-
-.works span {
-  margin-top: 8px;
-  font-size: 0.95rem;
-  color: #333;
-  font-weight: 500;
-}
-
-/* Hover effect */
-.works:hover img {
-  filter: grayscale(0) brightness(1);
-  transform: scale(1.08);
-}
-
-.works:hover span {
-  color: #8b5cf6; /* pastel violet accent */
-}
-
 /* Keyframes for Infinite Scroll */
 @keyframes scrollLoop {
   0% {
